@@ -1,6 +1,6 @@
 <template>
   <div class="p-4 flex gap-4">
-    <button class="btn">Hello daisyUI สวัสดี</button>
+    <button class="btn">Nitivat Vorasan</button>
     <select class="select w-full max-w-xs" v-model="colorMode.preference">
       <option disabled selected>Theme</option>
       <option v-for="theme of themes" :key="theme">{{ theme }}</option>
@@ -17,7 +17,7 @@
   </div>
   <div class="p-10">
     <div class="card w-96 bg-base-100 shadow-xl">
-      <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+      <figure><img src="https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/301140847_5399833980065464_5188964123215900127_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1Ivkl6iuc0AX_qRpvs&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfCGvvLhhokXSx7T6P7LYGTXdtc0TezNVAW2Wjh1JBiHLA&oe=6550EC08" alt="Shoes" /></figure>
       <div class="card-body">
         <h2 class="card-title">Shoes! สวัสดี</h2>
         <p>If a dog chews shoes whose shoes does he choose?</p>
