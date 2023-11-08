@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/color-mode','@nuxtjs/google-fonts'],
   colorMode: {
     preference: 'system', // default theme
     dataValue: 'theme', // activate data-theme in <html> tag
@@ -14,5 +14,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  googleFonts: {
+    // Options
+    families:{
+      Kanit: true
+    }
+  }
   
 })
