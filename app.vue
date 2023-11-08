@@ -20,6 +20,28 @@
   </div>
 
   </div>
+  <div class="collapse bg-base-200">
+  <input type="checkbox" class="peer" /> 
+  <div class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+    Click me to show/hide content
+  </div>
+  <div class="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"> 
+    <p>hello</p>
+  </div>
+  <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</div>
   <div class="p-10">
     <div class="card w-96 bg-base-100 shadow-xl">
       <figure><img src="https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/301140847_5399833980065464_5188964123215900127_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1Ivkl6iuc0AX_qRpvs&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfCGvvLhhokXSx7T6P7LYGTXdtc0TezNVAW2Wjh1JBiHLA&oe=6550EC08" alt="Shoes" /></figure>
@@ -58,4 +80,15 @@ const themes = [
   'light',
   'dark',
 ];
+// const { data } = await useFetch('https://covid19.traffy.in.th/api/state-covid19')
+// console.log(data)
+useSeoMeta({
+  title: `My Amazing Site`,
+  ogTitle: 'My Amazing Site',
+  description: 'This is my amazing site, let me tell you all about it.',
+  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
+
