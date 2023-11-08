@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-base-100 md:container mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -80,41 +80,26 @@
                   <li>
                     <a>React Native</a>
                   </li>
-                  <li>
-                    <a>Golang</a>
-                  </li>
                 </ul>
               </div>
             </li>
             <li>
               <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
                 <label tabindex="1">
-                  <a>หน้าจอผู้ใช้</a>
+                  <a>ระบบ</a>
                 </label>
                 <ul
                   tabindex="1"
                   class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <a>VueJS</a>
-                  </li>
-                  <li>
-                    <a>NuxtJS</a>
-                  </li>
-                  <li>
-                    <a>ReactJS</a>
-                  </li>
-                  <li>
-                    <a>NextJS</a>
-                  </li>
-                  <li>
-                    <a>Flutter</a>
-                  </li>
-                  <li>
-                    <a>React Native</a>
+                    <a>ExpressJS</a>
                   </li>
                   <li>
                     <a>Golang</a>
+                  </li>
+                  <li>
+                    <a>NestJS</a>
                   </li>
                 </ul>
               </div>
@@ -346,32 +331,17 @@
 <script setup>
 const colorMode = useColorMode();
 const themes = ["mytheme", "system", "light", "dark"];
-const { data } = await useFetch("/api/hello");
-console.log(data);
+// const { data } = await useFetch("/api/hello");
+// console.log(data);
 useSeoMeta({
-  title: `My Amazing Site ${data._rawValue.hello}`,
-  ogTitle: `My Amazing Site ${data._rawValue.hello}`,
+  title: `Nitivat Vorasan | Portfolio`,
+  ogTitle: `Nitivat Vorasan | Portfolio`,
   description:
-    "This is my amazing site, let me tell you all about it. ${data._rawValue.hello}",
-  ogDescription: "This is my amazing site, let me tell you all about it.",
-  ogImage: "https://example.com/image.png",
+    "This is my web site, let me tell you all about it.",
+  ogDescription:  "This is my web site, let me tell you all about it.",
+  ogImage: "https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/301140847_5399833980065464_5188964123215900127_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1Ivkl6iuc0AX_qRpvs&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfCGvvLhhokXSx7T6P7LYGTXdtc0TezNVAW2Wjh1JBiHLA&oe=6550EC08",
   twitterCard: "summary_large_image"
 });
-// const { data: posts } = await useAsyncData(
-//   'posts',
-//   () => $fetch('/api/hello', {
 
-//   })
-// )
-// console.log(posts)
-
-// useSeoMeta({
-//   title: `My Amazing Site ${posts._rawValue.hello}`,
-//   ogTitle: `My Amazing Site ${posts._rawValue.hello}`,
-//   description: 'This is my amazing site, let me tell you all about it. ${data._rawValue.hello}',
-//   ogDescription: 'This is my amazing site, let me tell you all about it.',
-//   ogImage: 'https://example.com/image.png',
-//   twitterCard: 'summary_large_image',
-// })
 </script>
 
