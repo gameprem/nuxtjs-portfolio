@@ -80,15 +80,32 @@ const themes = [
   'light',
   'dark',
 ];
-// const { data } = await useFetch('https://covid19.traffy.in.th/api/state-covid19')
-// console.log(data)
+const  {data}  = await useFetch('/api/hello')
+console.log(data)
 useSeoMeta({
-  title: `My Amazing Site`,
-  ogTitle: 'My Amazing Site',
-  description: 'This is my amazing site, let me tell you all about it.',
+  title: `My Amazing Site ${data._rawValue.hello}`,
+  ogTitle: `My Amazing Site ${data._rawValue.hello}`,
+  description: 'This is my amazing site, let me tell you all about it. ${data._rawValue.hello}',
   ogDescription: 'This is my amazing site, let me tell you all about it.',
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image',
 })
+// const { data: posts } = await useAsyncData(
+//   'posts',
+//   () => $fetch('/api/hello', {
+  
+//   })
+// )
+// console.log(posts)
+
+// useSeoMeta({
+//   title: `My Amazing Site ${posts._rawValue.hello}`,
+//   ogTitle: `My Amazing Site ${posts._rawValue.hello}`,
+//   description: 'This is my amazing site, let me tell you all about it. ${data._rawValue.hello}',
+//   ogDescription: 'This is my amazing site, let me tell you all about it.',
+//   ogImage: 'https://example.com/image.png',
+//   twitterCard: 'summary_large_image',
+// })
+
 </script>
 

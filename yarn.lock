@@ -966,7 +966,7 @@
 
 "@nuxtjs/color-mode@^3.3.0":
   version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-3.3.0.tgz#4c0e2ea2b23813461e6cfaa10dd169805a5145a6"
+  resolved "https://registry.npmjs.org/@nuxtjs/color-mode/-/color-mode-3.3.0.tgz"
   integrity sha512-YVFNmTISke1eL7uk5p9I1suOsM222FxrqKoF13HS4x94OKCWwPLLeTCEzHZ8orzKnaFUbCXpuL4pRv8gvW+0Kw==
   dependencies:
     "@nuxt/kit" "^3.5.3"
@@ -975,7 +975,7 @@
 
 "@nuxtjs/google-fonts@^3.0.2":
   version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/google-fonts/-/google-fonts-3.0.2.tgz#baecde4a4bbd4e9ff5724d83d427c56b1ffc5127"
+  resolved "https://registry.npmjs.org/@nuxtjs/google-fonts/-/google-fonts-3.0.2.tgz"
   integrity sha512-9DY0NcBnx/I6+3Lr7NeB64k5A7GbqCN1pqVgU9ld00NEXSpDUht2+lG8mcC5UnmpTi8KCdCJckDbD/bqW3ncYg==
   dependencies:
     "@nuxt/kit" "^3.6.5"
@@ -1263,9 +1263,9 @@
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
-"@types/node@*":
+"@types/node@*", "@types/node@^20.9.0":
   version "20.9.0"
-  resolved "https://registry.npmjs.org/@types/node/-/node-20.9.0.tgz"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.9.0.tgz#bfcdc230583aeb891cf51e73cfdaacdd8deae298"
   integrity sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==
   dependencies:
     undici-types "~5.26.4"
@@ -3000,7 +3000,7 @@ globby@^13.2.2:
 
 google-fonts-helper@^3.3.1:
   version "3.3.1"
-  resolved "https://registry.yarnpkg.com/google-fonts-helper/-/google-fonts-helper-3.3.1.tgz#d4404fbd3aca2ed7aa5686efa446bd7e4e99dd36"
+  resolved "https://registry.npmjs.org/google-fonts-helper/-/google-fonts-helper-3.3.1.tgz"
   integrity sha512-zMycq4nUUaplGe7pzCOGBC52LB3VpwxS9temmCx1EucEaBdBEpG5MeQlJhtRu63gKI1hb/l+yHkasQtee59sFA==
   dependencies:
     deepmerge "^4.3.1"
@@ -3668,7 +3668,7 @@ local-pkg@^0.5.0:
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+  resolved "https://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz"
   integrity sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==
 
 lodash.debounce@^4.0.8:
@@ -3698,7 +3698,7 @@ lodash.pick@^4.4.0:
 
 lodash.template@^4.5.0:
   version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
+  resolved "https://registry.npmjs.org/lodash.template/-/lodash.template-4.5.0.tgz"
   integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
   dependencies:
     lodash._reinterpolate "^3.0.0"
@@ -3706,7 +3706,7 @@ lodash.template@^4.5.0:
 
 lodash.templatesettings@^4.0.0:
   version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-4.2.0.tgz#e481310f049d3cf6d47e912ad09313b154f0fb33"
+  resolved "https://registry.npmjs.org/lodash.templatesettings/-/lodash.templatesettings-4.2.0.tgz"
   integrity sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   dependencies:
     lodash._reinterpolate "^3.0.0"
