@@ -48,31 +48,76 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <a>หน้าแรก</a>
             </li>
             <li>
-              <a>About</a>
+              <a>เกี่ยวกับ</a>
             </li>
             <li>
               <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
                 <label tabindex="1">
-                  <a>Category</a>
+                  <a>หน้าจอผู้ใช้</a>
                 </label>
                 <ul
                   tabindex="1"
                   class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <a>Item 1</a>
+                    <a>VueJS</a>
                   </li>
                   <li>
-                    <a>Item 2</a>
+                    <a>NuxtJS</a>
+                  </li>
+                  <li>
+                    <a>ReactJS</a>
+                  </li>
+                  <li>
+                    <a>NextJS</a>
+                  </li>
+                  <li>
+                    <a>Flutter</a>
+                  </li>
+                  <li>
+                    <a>React Native</a>
+                  </li>
+                  <li>
+                    <a>Golang</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
-              <a>Skill</a>
+              <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
+                <label tabindex="1">
+                  <a>หน้าจอผู้ใช้</a>
+                </label>
+                <ul
+                  tabindex="1"
+                  class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li>
+                    <a>VueJS</a>
+                  </li>
+                  <li>
+                    <a>NuxtJS</a>
+                  </li>
+                  <li>
+                    <a>ReactJS</a>
+                  </li>
+                  <li>
+                    <a>NextJS</a>
+                  </li>
+                  <li>
+                    <a>Flutter</a>
+                  </li>
+                  <li>
+                    <a>React Native</a>
+                  </li>
+                  <li>
+                    <a>Golang</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -127,15 +172,15 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <h1 class="mb-5 text-5xl font-bold">สวัสดีฉันคือนักพัฒนา</h1>
             <p
               class="mb-5"
             >Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
             <div class="flex justify-center gap-1 my-1 w-full">
-              <kbd class="kbd">p</kbd>
-              <kbd class="kbd">r</kbd>
-              <kbd class="kbd">e</kbd>
-              <kbd class="kbd">m</kbd>
+              <kbd class="kbd">P</kbd>
+              <kbd class="kbd">R</kbd>
+              <kbd class="kbd">E</kbd>
+              <kbd class="kbd">M</kbd>
             </div>
           </div>
         </div>
