@@ -46,10 +46,10 @@
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <NuxtLink :to="'/'">หน้าแรก</NuxtLink>
+          <NuxtLink :class="[ isRouteActive('/')? 'active':'']" :to="'/'">หน้าแรก</NuxtLink>
         </li>
         <li>
-          <NuxtLink :to="'about'">เกี่ยวกับ</NuxtLink>
+          <NuxtLink :class="[ isRouteActive('/about')? 'active':'']" :to="'about'">เกี่ยวกับ</NuxtLink>
         </li>
         <li>
           <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
@@ -150,11 +150,33 @@ const themes = ["mytheme", "system", "light", "dark"];
 useSeoMeta({
   title: `Nitivat Vorasan | Portfolio`,
   ogTitle: `Nitivat Vorasan | Portfolio`,
-  description:
-    "This is my web site, let me tell you all about it.",
-  ogDescription:  "This is my web site, let me tell you all about it.",
-  ogImage: "https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/301140847_5399833980065464_5188964123215900127_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1Ivkl6iuc0AX_qRpvs&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfCGvvLhhokXSx7T6P7LYGTXdtc0TezNVAW2Wjh1JBiHLA&oe=6550EC08",
+  description: "This is my web site, let me tell you all about it.",
+  ogDescription: "This is my web site, let me tell you all about it.",
+  ogImage:
+    "https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/301140847_5399833980065464_5188964123215900127_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1Ivkl6iuc0AX_qRpvs&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfCGvvLhhokXSx7T6P7LYGTXdtc0TezNVAW2Wjh1JBiHLA&oe=6550EC08",
   twitterCard: "summary_large_image"
 });
+</script>
 
+
+<script>
+export default {
+  methods: {
+    toLink(to, index) {
+      if (to !== null) {
+        this.currentIndexMenu = index;
+        this.$router.push({ path: to });
+      } else {
+        this.currentIndexMenu = index;
+      }
+    },
+    isRouteActive(to) {
+        const route = useRoute()
+      if (to === route.path) {
+        return true;
+      }
+      return false;
+    }
+  }
+};
 </script>
