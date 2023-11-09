@@ -88,11 +88,11 @@
         </li>
         <li>
           <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
-            <label tabindex="1">
+            <label tabindex="0">
               <a>{{$t('Front-End')}}</a>
             </label>
             <ul
-              tabindex="1"
+              tabindex="0"
               class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
@@ -118,11 +118,11 @@
         </li>
         <li>
           <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
-            <label tabindex="1">
+            <label tabindex="0">
               <a>{{$t('Back-End')}}</a>
             </label>
             <ul
-              tabindex="1"
+              tabindex="0"
               class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
@@ -141,11 +141,11 @@
     </div>
     <div class="navbar-end">
       <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
-        <label tabindex="1">
+        <label tabindex="0">
           <img :src="currentLocale.img" class="h-3 w-5" :alt="currentLocale.locale" />
         </label>
         <ul
-          tabindex="1"
+          tabindex="0"
           class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li v-for="(item, index) in locales" :key="index" @click="changeLocale(item.locale)">
@@ -189,8 +189,7 @@
 <script setup>
 const colorMode = useColorMode();
 const themes = ["mytheme", "system", "light", "dark"];
-// const { data } = await useFetch("/api/hello");
-// console.log(data);
+
 useSeoMeta({
   title: `Nitivat Vorasan | Portfolio`,
   ogTitle: `Nitivat Vorasan | Portfolio`,
