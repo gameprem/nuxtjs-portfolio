@@ -140,7 +140,7 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
+      <div class="dropdown dropdown-hover dropdown-bottom dropdown-end">
         <label tabindex="0">
           <img :src="currentLocale.img" class="h-3 w-5" :alt="currentLocale.locale" />
         </label>
