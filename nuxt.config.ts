@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/color-mode','@nuxtjs/google-fonts','@nuxtjs/i18n'],
+  modules: ['@nuxtjs/color-mode','@nuxtjs/google-fonts'],
   colorMode: {
     preference: 'system', // default theme
     dataValue: 'theme', // activate data-theme in <html> tag
@@ -27,13 +27,6 @@ export default defineNuxtConfig({
       Kanit: true
     }
   },
-  i18n: {
-    /* module options */
-    locales: ["th","en"], // 👈
-    defaultLocale: "th",      // 👈
-    strategy: "prefix",
-    detectBrowserLanguage: false,
-    vueI18n: './locales/locales.ts'
-  },
+  
   
 })

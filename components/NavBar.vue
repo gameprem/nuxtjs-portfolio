@@ -105,20 +105,29 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <form> 
-      <label for="locale-select">{{ $t('Language') }}: </label> 
-      <select id="locale-select" v-model="locale"> 
-        <option value="en">en</option> 
-        <option value="th">th</option> 
-      </select> 
-    </form> 
-      <select
+    <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
+            <label tabindex="1">
+              <a>{{$t('Language')}}</a>
+            </label>
+            <ul
+              tabindex="1"
+              class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <div @click="changeLocale('th')">ภาษาไทย</div>
+              </li>
+              <li>
+                <div  @click="changeLocale('en')">English</div>
+              </li>
+            </ul>
+          </div>
+      <!-- <select
         class="select select-ghost select-sm w-full max-w-xs mr-2"
         v-model="colorMode.preference"
       >
         <option disabled selected>Theme</option>
         <option v-for="theme of themes" :key="theme">{{ theme }}</option>
-      </select>
+      </select> -->
       <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
           <div class="w-10 rounded-full">
@@ -150,7 +159,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+
 const colorMode = useColorMode();
 const themes = ["mytheme", "system", "light", "dark"];
 // const { data } = await useFetch("/api/hello");
@@ -170,6 +179,10 @@ useSeoMeta({
 <script>
 export default {
   methods: {
+    changeLocale(value) {
+      this.$i18n.locale = value;
+      localStorage.setItem("locale", value.toString());
+    },
     toLink(to, index) {
       if (to !== null) {
         this.currentIndexMenu = index;
