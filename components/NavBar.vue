@@ -73,7 +73,16 @@
           </li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl">Nitivat Vorasan</a>
+      <a class="btn btn-ghost normal-case text-xl">
+        <label class="btn btn-ghost btn-circle avatar">
+          <div class="w-8 rounded-full">
+            <img
+              src="https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/301140847_5399833980065464_5188964123215900127_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1Ivkl6iuc0AX_qRpvs&_nc_ht=scontent.fkkc3-1.fna&oh=00_AfCGvvLhhokXSx7T6P7LYGTXdtc0TezNVAW2Wjh1JBiHLA&oe=6550EC08"
+            />
+          </div>
+        </label>
+        Nitivat Vorasan
+      </a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -156,7 +165,7 @@
           </li>
         </ul>
       </div>
-      <div class="dropdown dropdown-end ml-2">
+      <!-- <div class="dropdown dropdown-end ml-2">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
           <div class="w-10 rounded-full">
             <img
@@ -181,7 +190,7 @@
             <a>{{$t('Logout')}}</a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

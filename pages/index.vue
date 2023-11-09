@@ -22,7 +22,11 @@
     </div>
 
     <div class="md:container mx-auto p-10">
-      <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <div class="collapse bg-base-200">
+        <input type="checkbox" checked="checked" />
+        <div class="collapse-title text-xl font-medium">VueJS</div>
+        <div class="collapse-content">
+           <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
         <div class="card w-full bg-base-100 shadow-xl">
           <figure>
             <img
@@ -114,6 +118,9 @@
           </div>
         </div>
       </div>
+        </div>
+      </div>
+     
     </div>
   </div>
 </template>
