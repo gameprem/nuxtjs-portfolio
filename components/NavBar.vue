@@ -23,21 +23,53 @@
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <a>Item 1</a>
+            <NuxtLink
+              :class="[ isRouteActive('/')? 'active fill-primary':'']"
+              :to="'/'"
+            >{{$t('Home Page')}}</NuxtLink>
           </li>
           <li>
-            <a>Parent</a>
+            <NuxtLink
+              :class="[ isRouteActive('/about')? 'active':'']"
+              :to="'/about'"
+            >{{$t('About')}}</NuxtLink>
+          </li>
+          <li>
+            <a>{{$t('Front-End')}}</a>
             <ul class="p-2">
               <li>
-                <a>Submenu 1</a>
+                <NuxtLink :to="'/ui/vuejs'">VueJS</NuxtLink>
               </li>
               <li>
-                <a>Submenu 2</a>
+                <NuxtLink :to="'/ui/nuxtjs'">NuxtJS</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink :to="'/ui/reactjs'">ReactJS</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink :to="'/ui/nextjs'">NextJS</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink :to="'/ui/flutter'">Flutter</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink :to="'/ui/react-native'">React Native</NuxtLink>
               </li>
             </ul>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>{{$t('Back-End')}}</a>
+            <ul class="p-2">
+              <li>
+                <NuxtLink :to="'/api/expressjs'">ExpressJS</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink :to="'/api/expressjs'">NestJS</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink :to="'/api/golang'">Golang</NuxtLink>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -46,7 +78,10 @@
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <NuxtLink :class="[ isRouteActive('/')? 'active fill-primary':'']" :to="'/'">{{$t('Home Page')}}</NuxtLink>
+          <NuxtLink
+            :class="[ isRouteActive('/')? 'active fill-primary':'']"
+            :to="'/'"
+          >{{$t('Home Page')}}</NuxtLink>
         </li>
         <li>
           <NuxtLink :class="[ isRouteActive('/about')? 'active':'']" :to="'/about'">{{$t('About')}}</NuxtLink>
@@ -105,29 +140,29 @@
       </ul>
     </div>
     <div class="navbar-end">
-    <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
-            <label tabindex="1">
-              <a>{{$t('Language')}}</a>
-            </label>
-            <ul
-              tabindex="1"
-              class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <div @click="changeLocale('th')">ภาษาไทย</div>
-              </li>
-              <li>
-                <div  @click="changeLocale('en')">English</div>
-              </li>
-            </ul>
-          </div>
+      <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
+        <label tabindex="1">
+          <a>{{$t('Language')}}</a>
+        </label>
+        <ul
+          tabindex="1"
+          class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+        >
+          <li>
+            <div @click="changeLocale('th')">ภาษาไทย</div>
+          </li>
+          <li>
+            <div @click="changeLocale('en')">English</div>
+          </li>
+        </ul>
+      </div>
       <!-- <select
         class="select select-ghost select-sm w-full max-w-xs mr-2"
         v-model="colorMode.preference"
       >
         <option disabled selected>Theme</option>
         <option v-for="theme of themes" :key="theme">{{ theme }}</option>
-      </select> -->
+      </select>-->
       <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
           <div class="w-10 rounded-full">
@@ -159,7 +194,6 @@
 </template>
 
 <script setup>
-
 const colorMode = useColorMode();
 const themes = ["mytheme", "system", "light", "dark"];
 // const { data } = await useFetch("/api/hello");
