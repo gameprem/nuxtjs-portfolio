@@ -7,10 +7,10 @@
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-center text-neutral-content">
         <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">สวัสดีฉันคือนักพัฒนา</h1>
+          <h1 class="mb-5 text-5xl font-bold">{{ $t(`Hello, I'm a developer.`) }}</h1>
           <p
             class="mb-5"
-          >Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          >{{ $t(`Software developer who are passionate about the world of programming and constantly challenges yourself to learn new technologies. You're someone who is fascinated by the capabilities of technology that transform our daily lives.`) }}</p>
           <div class="flex justify-center gap-1 my-1 w-full">
             <kbd class="kbd">{{$i18n.locale == 'th'? 'เ':'P'}}</kbd>
             <kbd class="kbd">{{$i18n.locale == 'th'? 'ป':'R'}}</kbd>

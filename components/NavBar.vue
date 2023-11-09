@@ -81,7 +81,7 @@
             />
           </div>
         </label>
-        Nitivat Vorasan
+        {{ $t('Nitivat Vorasan') }}
       </NuxtLink>
     </div>
     <div class="navbar-center hidden lg:flex">

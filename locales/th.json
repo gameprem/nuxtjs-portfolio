@@ -1,12 +1,15 @@
 {
-    "Home Page": "หน้าแรก",
-    "About": "เกี่ยวกับ",
-    "Front-End":"หน้าบ้าน",
-    "Back-End":"หลังบ้าน",
-    "Language":"ภาษา",
-    "Profile":"โปรไฟล์",
-    "Settings":"ตั้งค่า",
-    "Logout":"ออกจากระบบ",
-    "New":"ใหม่",
-    "X":"X"
-  }
+  "Home Page": "หน้าแรก",
+  "About": "เกี่ยวกับ",
+  "Front-End": "หน้าบ้าน",
+  "Back-End": "หลังบ้าน",
+  "Language": "ภาษา",
+  "Profile": "โปรไฟล์",
+  "Settings": "ตั้งค่า",
+  "Logout": "ออกจากระบบ",
+  "New": "ใหม่",
+  "Nitivat Vorasan": "นิติวัช วรสาร",
+  "Hello, I'm a developer.": "สวัสดีฉันคือนักพัฒนา",
+  "Software developer who are passionate about the world of programming and constantly challenges yourself to learn new technologies. You're someone who is fascinated by the capabilities of technology that transform our daily lives.":"นักพัฒนาซอฟต์แวร์ที่หลงไหลในโลกของการเขียนโปรแกรมและท้าทายตัวเองในการเรียนรู้เทคโนโลยีใหม่ๆอยู่เสมอ เป็นคนที่หลงไหลในความสามารถของเทคโนโลยีที่เปลี่ยนแปลงวิถีชีวิตประจำวันของเรา",
+  "X": "X"
+}
