@@ -46,10 +46,10 @@
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <NuxtLink :class="[ isRouteActive('/')? 'active':'']" :to="'/'">หน้าแรก</NuxtLink>
+          <NuxtLink :class="[ isRouteActive('/')? 'active fill-primary':'']" :to="'/'">หน้าแรก</NuxtLink>
         </li>
         <li>
-          <NuxtLink :class="[ isRouteActive('/about')? 'active':'']" :to="'about'">เกี่ยวกับ</NuxtLink>
+          <NuxtLink :class="[ isRouteActive('/about')? 'active':'']" :to="'/about'">เกี่ยวกับ</NuxtLink>
         </li>
         <li>
           <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
@@ -61,22 +61,22 @@
               class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>VueJS</a>
+                <NuxtLink :to="'/ui/vuejs'">VueJS</NuxtLink>
               </li>
               <li>
-                <a>NuxtJS</a>
+                <NuxtLink :to="'/ui/nuxtjs'">NuxtJS</NuxtLink>
               </li>
               <li>
-                <a>ReactJS</a>
+                <NuxtLink :to="'/ui/reactjs'">ReactJS</NuxtLink>
               </li>
               <li>
-                <a>NextJS</a>
+                <NuxtLink :to="'/ui/nextjs'">NextJS</NuxtLink>
               </li>
               <li>
-                <a>Flutter</a>
+                <NuxtLink :to="'/ui/flutter'">Flutter</NuxtLink>
               </li>
               <li>
-                <a>React Native</a>
+                <NuxtLink :to="'/ui/react-native'">React Native</NuxtLink>
               </li>
             </ul>
           </div>
@@ -91,13 +91,13 @@
               class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>ExpressJS</a>
+                <NuxtLink :to="'/api/expressjs'">ExpressJS</NuxtLink>
               </li>
               <li>
-                <a>Golang</a>
+                <NuxtLink :to="'/api/expressjs'">NestJS</NuxtLink>
               </li>
               <li>
-                <a>NestJS</a>
+                <NuxtLink :to="'/api/golang'">Golang</NuxtLink>
               </li>
             </ul>
           </div>
@@ -171,7 +171,7 @@ export default {
       }
     },
     isRouteActive(to) {
-        const route = useRoute()
+      const route = useRoute();
       if (to === route.path) {
         return true;
       }
