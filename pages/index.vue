@@ -12,10 +12,10 @@
             class="mb-5"
           >Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
           <div class="flex justify-center gap-1 my-1 w-full">
-            <kbd class="kbd">P</kbd>
-            <kbd class="kbd">R</kbd>
-            <kbd class="kbd">E</kbd>
-            <kbd class="kbd">M</kbd>
+            <kbd class="kbd">{{$i18n.locale == 'th'? 'เ':'P'}}</kbd>
+            <kbd class="kbd">{{$i18n.locale == 'th'? 'ป':'R'}}</kbd>
+            <kbd class="kbd">{{$i18n.locale == 'th'? 'ร':'E'}}</kbd>
+            <kbd class="kbd">{{$i18n.locale == 'th'? 'ม':'M'}}</kbd>
           </div>
         </div>
       </div>
@@ -119,10 +119,7 @@
 </template>
 
 <script>
-
 export default {
-
-  name: "IndexPage",
-
+  name: "IndexPage"
 };
 </script>

@@ -3,5 +3,10 @@
     "About": "About",
     "Front-End":"Front-End",
     "Back-End":"Back-End",
-    "Language":"Language"
+    "Language":"Language",
+    "Profile":"Profile",
+    "Settings":"Settings",
+    "Logout":"Logout",
+    "New":"New",
+    "X":"X"
   }

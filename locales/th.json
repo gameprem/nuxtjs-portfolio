@@ -3,5 +3,10 @@
     "About": "เกี่ยวกับ",
     "Front-End":"หน้าบ้าน",
     "Back-End":"หลังบ้าน",
-    "Language":"ภาษา"
+    "Language":"ภาษา",
+    "Profile":"โปรไฟล์",
+    "Settings":"ตั้งค่า",
+    "Logout":"ออกจากระบบ",
+    "New":"ใหม่",
+    "X":"X"
   }

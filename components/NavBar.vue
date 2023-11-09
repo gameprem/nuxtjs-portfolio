@@ -142,28 +142,21 @@
     <div class="navbar-end">
       <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
         <label tabindex="1">
-          <a>{{$t('Language')}}</a>
+          <img :src="currentLocale.img" class="h-3 w-5" :alt="currentLocale.locale" />
         </label>
         <ul
           tabindex="1"
           class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li>
-            <div @click="changeLocale('th')">ภาษาไทย</div>
-          </li>
-          <li>
-            <div @click="changeLocale('en')">English</div>
+          <li v-for="(item, index) in locales" :key="index" @click="changeLocale(item.locale)">
+            <div class="inline-flex">
+              <img :src="item.img" class="h-3 w-5 m-1" :alt="item.locale + item.index" />
+              {{ item.name }}
+            </div>
           </li>
         </ul>
       </div>
-      <!-- <select
-        class="select select-ghost select-sm w-full max-w-xs mr-2"
-        v-model="colorMode.preference"
-      >
-        <option disabled selected>Theme</option>
-        <option v-for="theme of themes" :key="theme">{{ theme }}</option>
-      </select>-->
-      <div class="dropdown dropdown-end">
+      <div class="dropdown dropdown-end ml-2">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
           <div class="w-10 rounded-full">
             <img
@@ -177,15 +170,15 @@
         >
           <li>
             <a class="justify-between">
-              Profile
-              <span class="badge">New</span>
+              {{$t('Profile')}}
+              <span class="badge">{{ $t('New') }}</span>
             </a>
           </li>
           <li>
-            <a>Settings</a>
+            <a>{{$t('Settings')}}</a>
           </li>
           <li>
-            <a>Logout</a>
+            <a>{{$t('Logout')}}</a>
           </li>
         </ul>
       </div>
@@ -211,7 +204,17 @@ useSeoMeta({
 
 
 <script>
+import locales from "@/locales/locales";
+
 export default {
+  setup() {
+    return { locales };
+  },
+  computed: {
+    currentLocale() {
+      return locales.find(l => l.locale === this.$i18n.locale);
+    }
+  },
   methods: {
     changeLocale(value) {
       this.$i18n.locale = value;
