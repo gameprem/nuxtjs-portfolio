@@ -46,15 +46,15 @@
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li>
-          <NuxtLink :class="[ isRouteActive('/')? 'active fill-primary':'']" :to="'/'">หน้าแรก</NuxtLink>
+          <NuxtLink :class="[ isRouteActive('/')? 'active fill-primary':'']" :to="'/'">{{$t('Home Page')}}</NuxtLink>
         </li>
         <li>
-          <NuxtLink :class="[ isRouteActive('/about')? 'active':'']" :to="'/about'">เกี่ยวกับ</NuxtLink>
+          <NuxtLink :class="[ isRouteActive('/about')? 'active':'']" :to="'/about'">{{$t('About')}}</NuxtLink>
         </li>
         <li>
           <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
             <label tabindex="1">
-              <a>หน้าจอผู้ใช้</a>
+              <a>{{$t('Front-End')}}</a>
             </label>
             <ul
               tabindex="1"
@@ -84,7 +84,7 @@
         <li>
           <div class="dropdown dropdown-hover dropdown-bottom dropdown-start">
             <label tabindex="1">
-              <a>ระบบ</a>
+              <a>{{$t('Back-End')}}</a>
             </label>
             <ul
               tabindex="1"
@@ -105,6 +105,13 @@
       </ul>
     </div>
     <div class="navbar-end">
+      <form> 
+      <label for="locale-select">{{ $t('Language') }}: </label> 
+      <select id="locale-select" v-model="locale"> 
+        <option value="en">en</option> 
+        <option value="th">th</option> 
+      </select> 
+    </form> 
       <select
         class="select select-ghost select-sm w-full max-w-xs mr-2"
         v-model="colorMode.preference"
@@ -143,6 +150,7 @@
 </template>
 
 <script setup>
+const { locale } = useI18n()
 const colorMode = useColorMode();
 const themes = ["mytheme", "system", "light", "dark"];
 // const { data } = await useFetch("/api/hello");
