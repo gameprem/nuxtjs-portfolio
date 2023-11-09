@@ -73,7 +73,7 @@
           </li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl">
+      <NuxtLink :to="'/'" class="btn btn-ghost normal-case text-xl">
         <label class="btn btn-ghost btn-circle avatar">
           <div class="w-8 rounded-full">
             <img
@@ -82,7 +82,7 @@
           </div>
         </label>
         Nitivat Vorasan
-      </a>
+      </NuxtLink>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
