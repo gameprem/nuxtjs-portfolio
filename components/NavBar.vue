@@ -38,22 +38,22 @@
             <a>{{$t('Front-End')}}</a>
             <ul class="p-2">
               <li>
-                <NuxtLink :to="'/ui/vuejs'">VueJS</NuxtLink>
+                <NuxtLink :to="'/front-end/vuejs'">VueJS</NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="'/ui/nuxtjs'">NuxtJS</NuxtLink>
+                <NuxtLink :to="'/front-end/nuxtjs'">NuxtJS</NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="'/ui/reactjs'">ReactJS</NuxtLink>
+                <NuxtLink :to="'/front-end/reactjs'">ReactJS</NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="'/ui/nextjs'">NextJS</NuxtLink>
+                <NuxtLink :to="'/front-end/nextjs'">NextJS</NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="'/ui/flutter'">Flutter</NuxtLink>
+                <NuxtLink :to="'/front-end/flutter'">Flutter</NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="'/ui/react-native'">React Native</NuxtLink>
+                <NuxtLink :to="'/front-end/react-native'">React Native</NuxtLink>
               </li>
             </ul>
           </li>
@@ -61,13 +61,13 @@
             <a>{{$t('Back-End')}}</a>
             <ul class="p-2">
               <li>
-                <NuxtLink :to="'/api/expressjs'">ExpressJS</NuxtLink>
+                <NuxtLink :to="'/back-end/expressjs'">ExpressJS</NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="'/api/expressjs'">NestJS</NuxtLink>
+                <NuxtLink :to="'/back-end/expressjs'">NestJS</NuxtLink>
               </li>
               <li>
-                <NuxtLink :to="'/api/golang'">Golang</NuxtLink>
+                <NuxtLink :to="'/back-end/golang'">Golang</NuxtLink>
               </li>
             </ul>
           </li>
