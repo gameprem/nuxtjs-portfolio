@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div
+  <div>
+    <div
       class="hero min-h-[500px]"
       style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);"
     >
@@ -20,5 +20,5 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
 </template>
