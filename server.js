@@ -1,25 +1,56 @@
-const express = require('express');
-const { Nuxt, Builder } = require('nuxt');
+const app = require("./app");
+const debug = require("debug")("node-angular");
+const http = require("http");
+const url = require('url');
 
-const config = require('./nuxt.config.js');
+const normalizePort = val => {
+  var port = parseInt(val, 10);
 
-// Create new express app
-const app = express();
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
 
-// Listen to port 3000 or PORT env if provided
-app.listen(process.env.PORT || 3000);
+  if (port >= 0) {
+    // port number
+    return port;
+  }
 
-// Enable production mode
-config.dev = false;
+  return false;
+};
 
-// Create instance of nuxt
-const nuxt = new Nuxt(config);
+const onError = error => {
+  if (error.syscall !== "listen") {
+    throw error;
+  }
+  const bind = typeof addr === "string" ? "pipe " + addr : "port " + port;
+  switch (error.code) {
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
+      process.exit(1);
+      break;
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+};
 
-// Add nuxt middleware
-app.use(nuxt.render);
+const onListening = () => {
+  const addr = server.address();
+  const bind = typeof addr === "string" ? "pipe " + addr : "port " + port;
+  debug("Listening on " + bind);
+  console.log("Listening on " + bind);
+};
 
-// Build on start
-new Builder(nuxt).build().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+const port = normalizePort(process.env.PORT || "3130");
+app.set("port", port);
+
+const server = http.createServer(app);
+
+server.on("error", onError);
+server.on("listening", onListening);
+
+server.listen(port);
