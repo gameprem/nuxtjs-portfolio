@@ -11,6 +11,5 @@ export default defineNuxtPlugin(({ vueApp }) => {
       th: th,
     }
   })
-
   vueApp.use(i18n)
 })
